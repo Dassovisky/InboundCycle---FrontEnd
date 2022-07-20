@@ -1,0 +1,429 @@
+$color_1: #ed5900;
+$color_2: #f59300;
+$color_3: #4f4f51;
+
+// Header 
+.header{
+	width: 100%;
+	height: auto;
+	padding: 2rem 0;
+	border-top: 4px solid $color_1;
+	
+	.header-container{
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.social-icons{
+		display: inline-flex;
+
+		li{
+			margin: 0 5px;
+			font-size: 1.2rem;
+
+			a{
+				color: $color_1;
+
+				&:hover{
+					color: $color_2;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// Separator Image 
+.separator-image{
+	width: 100%;
+	height: 200px;
+	background: url('../img/separator-image.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+// Wrapper 
+.wrapper{
+	width: 60%;
+	margin: 3rem auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+
+	.ebook{
+		width: 70%;
+		
+		.ebook-product{
+			float: left;
+			
+			img{
+				position: relative;
+				float: right;
+				margin: -5rem 4rem 0 0;
+				width: 250px;
+			}
+	
+			h1{
+				color: $color_1;
+				border-bottom: 1px solid #efefef;
+				margin: 0 0 3rem 0;
+				padding: 0 0 3rem 0;
+				font-size: 2rem;
+			}
+
+			h2{
+				font-size: 1.1rem;
+				color: #b1b1b1;
+				margin: 0 0 40px 0;
+			}
+
+		}
+
+		p{
+			font-size: 14px;
+			line-height: 1.6;
+
+			a{
+				color: $color_1;
+				text-decoration: underline;
+			}
+
+		}
+
+		.emphasizes{
+			margin: 3rem 0 1rem 0;
+			color: $color_1;
+			font-weight: bold;
+			text-align: center;
+		}
+
+	}
+
+	.descargar-ebook{
+		width: 30%;
+		padding: 0 0 .5rem 2rem;
+		
+		.form{
+			padding: 1rem 2rem;
+			background: #ececec;
+
+			fieldset{
+				padding: 0;
+			}
+
+			h3{
+				font-size: 1rem;
+				color: $color_1;
+				text-align: center;
+				font-weight: bold;
+				border: none;
+			}
+
+			.input{
+				width: 90%;
+				padding: 5%;
+				margin: .2rem 0;
+				outline: none;
+				border: 1px solid #ccc;
+			}
+
+			
+			.label{
+				margin: .3rem 0;
+				
+				label{
+					font-size: 1rem;
+					float: left;	
+					padding: .5rem 0 0 0;
+
+					a{
+						color: $color_1;
+
+						&:hover{
+							color: $color_2;
+						}
+
+					}
+
+				}
+
+			}
+
+			button{
+				width: 100%;
+				height: auto;
+				border: none;
+				margin: 1rem 0 1rem 0;
+				font-size: 1rem;
+				padding: 1rem;
+				font-weight: bold;
+				color: #fff;
+				background: $color_1;
+				cursor: pointer;
+
+				&:hover{
+					background: $color_2;
+				}
+
+			}
+
+		}
+	}
+}
+
+// Footer 
+.footer-frame{
+	width: 100%;
+	height: auto;
+	padding: 4rem 0;
+	color: #fff;
+	background: $color_3;
+
+    .footer-container{
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+    }
+
+    .footer-final{
+		display: flex;
+		align-items: center;
+
+        .footer-copyright{
+          float: left;
+        }
+        .footer-nav{
+          display: inline;
+          float: left;
+
+            ul{
+              padding: 0 0 0 1rem;
+
+                li{ 
+					padding: 0 1rem;
+					border-left: 1px solid #fff;
+					display: inline-block;                
+    
+                    a{
+                      color: #fff;
+                        
+                        &:hover{
+                          color: $color_2;
+                        }
+                        
+                    }
+    
+                }
+
+            }
+            
+        }
+
+    }
+    
+}
+
+// Popup 
+#popup{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	display: none;
+
+	.caption{
+		position: fixed;
+		width: 20%;
+		height: auto;
+		top: 25%;
+		left: 50%;
+		padding: 30px;
+    	transform: translateX(-50%);
+		background: #fff;
+		text-align: center;
+		border-radius: 5px;
+
+		#close{	
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin: 20px;
+			padding: 3px 5px 5px 5px;
+			cursor: pointer;
+			color: #fff;
+			background: $color_2;
+			border-radius: 5px;
+
+			&:hover{
+				background: $color_1;
+			}
+
+		}
+
+		#award{
+			margin: 10px 0 0 0;
+			font-size: 4rem;
+			padding: 10%;
+			color: #fff;
+			border-radius: 50%;
+			background: rgb(237,89,0);
+			background: linear-gradient(90deg, rgba(237,89,0,1) 0%, rgba(245,147,0,1) 66%);
+		}
+
+		p{
+			font-size: 2rem;
+			margin: 10px 0 0 0;
+			font-weight: bold;
+		}
+
+		.gracias{
+			font-size: 1rem;
+			color: #b1b1b1;
+			margin: 10px 0;
+		}
+
+	}
+
+}
+
+// Medium devices (Desktops)
+@media (max-width: 1600px) { 
+	
+	.header-container{
+		width: 70% !important;
+	}
+
+	.wrapper{
+		width: 70%;		
+	}
+
+	.footer-container{
+		width: 70%;
+	}
+
+ }
+
+ // Medium devices (Desktops)
+ @media (max-width: 1200px) { 
+	
+	.header-container{
+		width: 90% !important;
+	}
+
+	.wrapper{
+		width: 90%;
+		flex-direction: column;
+		align-items: center;
+
+		.ebook {
+			width: 100%;
+
+			.emphasizes{
+				margin: 30px 0;
+			}
+
+		}
+
+		img{
+			margin: -10px 0 0 0 !important;
+			width: 250px !important;
+		}
+
+		.descargar-ebook {
+			width: 90%;
+			align-items: center !important;
+
+			.form{
+				text-align: center;
+
+				.input {
+					width: 95% !important;
+					padding: 2% !important;
+					
+				}
+
+			}
+			
+		}
+
+	}
+
+	.footer-container{
+		width: 90% !important;
+	}
+
+	.caption{
+		width: 70% !important;
+	}
+
+ }
+
+// Medium devices (Tablets)
+ @media (max-width: 768px) { 
+	
+	.header-container{
+		width: 90% !important;
+		
+		img{
+			width: 200px;
+		}
+
+	}
+
+	.wrapper{
+		width: 90%;
+		text-align: center;
+		margin: 0 auto!important;
+
+		.ebook-product{
+			
+
+			h1, h2{
+				margin: 15px 0 !important;
+				padding: 0 0 15px 0 !important;
+			}
+
+		}
+
+		img{
+			width: 250px !important;
+			float: none !important;
+		}
+
+		.descargar-ebook{
+			margin: 0 0 20px 0;
+			padding: 0;
+		}
+
+	}
+
+	.footer-container{
+		width: 90% !important;
+		flex-direction: column;
+		
+		.footer-final{
+			margin: 15px 0 0 0;
+			flex-direction: column;
+
+			li:first-child{
+				border: none !important;
+			}
+
+		}
+
+	}
+
+ }
+

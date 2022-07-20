@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Helvetica Neue Regular', 'Arial', 'Sans-serif';
+  src: url("../fonts/HelveticaNeueRegular.ttf"), url("../fonts/HelveticaNeueBold.ttf");
+  font-weight: 500; }
+html, body {
+  font-family: 'Helvetica Neue Regular', 'Arial', 'Sans-serif';
+  margin: 0; }
+
+fieldset {
+  border: none; }
+
+a, button, i {
+  transition: all 0.2s ease-in-out;
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }

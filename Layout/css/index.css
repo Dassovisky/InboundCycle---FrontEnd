@@ -1,0 +1,255 @@
+.header {
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+  border-top: 4px solid #ed5900; }
+  .header .header-container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header .social-icons {
+    display: inline-flex; }
+    .header .social-icons li {
+      margin: 0 5px;
+      font-size: 1.2rem; }
+      .header .social-icons li a {
+        color: #ed5900; }
+        .header .social-icons li a:hover {
+          color: #f59300; }
+
+.separator-image {
+  width: 100%;
+  height: 200px;
+  background: url("../img/separator-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.wrapper {
+  width: 60%;
+  margin: 3rem auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+  .wrapper .ebook {
+    width: 70%; }
+    .wrapper .ebook .ebook-product {
+      float: left; }
+      .wrapper .ebook .ebook-product img {
+        position: relative;
+        float: right;
+        margin: -5rem 4rem 0 0;
+        width: 250px; }
+      .wrapper .ebook .ebook-product h1 {
+        color: #ed5900;
+        border-bottom: 1px solid #efefef;
+        margin: 0 0 3rem 0;
+        padding: 0 0 3rem 0;
+        font-size: 2rem; }
+      .wrapper .ebook .ebook-product h2 {
+        font-size: 1.1rem;
+        color: #b1b1b1;
+        margin: 0 0 40px 0; }
+    .wrapper .ebook p {
+      font-size: 14px;
+      line-height: 1.6; }
+      .wrapper .ebook p a {
+        color: #ed5900;
+        text-decoration: underline; }
+    .wrapper .ebook .emphasizes {
+      margin: 3rem 0 1rem 0;
+      color: #ed5900;
+      font-weight: bold;
+      text-align: center; }
+  .wrapper .descargar-ebook {
+    width: 30%;
+    padding: 0 0 .5rem 2rem; }
+    .wrapper .descargar-ebook .form {
+      padding: 1rem 2rem;
+      background: #ececec; }
+      .wrapper .descargar-ebook .form fieldset {
+        padding: 0; }
+      .wrapper .descargar-ebook .form h3 {
+        font-size: 1rem;
+        color: #ed5900;
+        text-align: center;
+        font-weight: bold;
+        border: none; }
+      .wrapper .descargar-ebook .form .input {
+        width: 90%;
+        padding: 5%;
+        margin: .2rem 0;
+        outline: none;
+        border: 1px solid #ccc; }
+      .wrapper .descargar-ebook .form .label {
+        margin: .3rem 0; }
+        .wrapper .descargar-ebook .form .label label {
+          font-size: 1rem;
+          float: left;
+          padding: .5rem 0 0 0; }
+          .wrapper .descargar-ebook .form .label label a {
+            color: #ed5900; }
+            .wrapper .descargar-ebook .form .label label a:hover {
+              color: #f59300; }
+      .wrapper .descargar-ebook .form button {
+        width: 100%;
+        height: auto;
+        border: none;
+        margin: 1rem 0 1rem 0;
+        font-size: 1rem;
+        padding: 1rem;
+        font-weight: bold;
+        color: #fff;
+        background: #ed5900;
+        cursor: pointer; }
+        .wrapper .descargar-ebook .form button:hover {
+          background: #f59300; }
+
+.footer-frame {
+  width: 100%;
+  height: auto;
+  padding: 4rem 0;
+  color: #fff;
+  background: #4f4f51; }
+  .footer-frame .footer-container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .footer-frame .footer-final {
+    display: flex;
+    align-items: center; }
+    .footer-frame .footer-final .footer-copyright {
+      float: left; }
+    .footer-frame .footer-final .footer-nav {
+      display: inline;
+      float: left; }
+      .footer-frame .footer-final .footer-nav ul {
+        padding: 0 0 0 1rem; }
+        .footer-frame .footer-final .footer-nav ul li {
+          padding: 0 1rem;
+          border-left: 1px solid #fff;
+          display: inline-block; }
+          .footer-frame .footer-final .footer-nav ul li a {
+            color: #fff; }
+            .footer-frame .footer-final .footer-nav ul li a:hover {
+              color: #f59300; }
+
+#popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none; }
+  #popup .caption {
+    position: fixed;
+    width: 20%;
+    height: auto;
+    top: 25%;
+    left: 50%;
+    padding: 30px;
+    transform: translateX(-50%);
+    background: #fff;
+    text-align: center;
+    border-radius: 5px; }
+    #popup .caption #close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 20px;
+      padding: 3px 5px 5px 5px;
+      cursor: pointer;
+      color: #fff;
+      background: #f59300;
+      border-radius: 5px; }
+      #popup .caption #close:hover {
+        background: #ed5900; }
+    #popup .caption #award {
+      margin: 10px 0 0 0;
+      font-size: 4rem;
+      padding: 10%;
+      color: #fff;
+      border-radius: 50%;
+      background: #ed5900;
+      background: linear-gradient(90deg, #ed5900 0%, #f59300 66%); }
+    #popup .caption p {
+      font-size: 2rem;
+      margin: 10px 0 0 0;
+      font-weight: bold; }
+    #popup .caption .gracias {
+      font-size: 1rem;
+      color: #b1b1b1;
+      margin: 10px 0; }
+
+@media (max-width: 1600px) {
+  .header-container {
+    width: 70% !important; }
+
+  .wrapper {
+    width: 70%; }
+
+  .footer-container {
+    width: 70%; } }
+@media (max-width: 1200px) {
+  .header-container {
+    width: 90% !important; }
+
+  .wrapper {
+    width: 90%;
+    flex-direction: column;
+    align-items: center; }
+    .wrapper .ebook {
+      width: 100%; }
+      .wrapper .ebook .emphasizes {
+        margin: 30px 0; }
+    .wrapper img {
+      margin: -10px 0 0 0 !important;
+      width: 250px !important; }
+    .wrapper .descargar-ebook {
+      width: 90%;
+      align-items: center !important; }
+      .wrapper .descargar-ebook .form {
+        text-align: center; }
+        .wrapper .descargar-ebook .form .input {
+          width: 95% !important;
+          padding: 2% !important; }
+
+  .footer-container {
+    width: 90% !important; }
+
+  .caption {
+    width: 70% !important; } }
+@media (max-width: 768px) {
+  .header-container {
+    width: 90% !important; }
+    .header-container img {
+      width: 200px; }
+
+  .wrapper {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto !important; }
+    .wrapper .ebook-product h1, .wrapper .ebook-product h2 {
+      margin: 15px 0 !important;
+      padding: 0 0 15px 0 !important; }
+    .wrapper img {
+      width: 250px !important;
+      float: none !important; }
+    .wrapper .descargar-ebook {
+      margin: 0 0 20px 0;
+      padding: 0; }
+
+  .footer-container {
+    width: 90% !important;
+    flex-direction: column; }
+    .footer-container .footer-final {
+      margin: 15px 0 0 0;
+      flex-direction: column; }
+      .footer-container .footer-final li:first-child {
+        border: none !important; } }

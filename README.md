@@ -1,0 +1,1 @@
+![alt text](https://github.com/dassatavares/InboundCycle-FrontEnd/blob/main/Layout/img/image.jpg)
